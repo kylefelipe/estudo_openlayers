@@ -1,0 +1,29 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Misturado HTML+CSS+JS</title>
+		<style>
+		  .button_js {background-color:green; 
+		              color:white; font-size: 30px; 
+					  font-weight; bold; padding: 20x; 
+					  border-radius: 5px; cursor: pointer;}
+		</style>
+		<script>
+		  function clicou(){
+		      var btn = document.getElementById('botao');
+			  var caixa_de_texto = document.getElementById('caixa')
+			  btn.value = caixa_de_texto.value;
+			  btn.style = 'color: red';
+			  
+		  };
+		  function checkinput(){
+		      alert('blur!');
+		  };
+		</script>
+	</head>
+	<body style="backgroup-color: #eeeeee; text-align: center;">
+	      <input type="text" value="digite algo... " onblur="checkinput()"></input>
+		  <input type="button" id="botao" class="button_js" value="Não clique aqui!"
+		  onclick="clicou()"></input>
+	</body>
+<html>
